@@ -448,3 +448,11 @@ function initScrollTop() {
   });
 }
 
+// Prevent default dragging of images and ghost ghosts
+document.addEventListener('dragstart', (e) => {
+  if (e.target.nodeName === 'IMG' || e.target.closest('img')) {
+    e.preventDefault();
+  }
+});
+
+

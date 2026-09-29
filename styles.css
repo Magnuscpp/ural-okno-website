@@ -73,6 +73,17 @@ button, input, select, textarea {
   font-family: inherit;
 }
 
+/* Запрет случайного перетаскивания и фантомного драга картинок */
+img, svg {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -541,6 +552,7 @@ body.preload .mobile-link {
   position: absolute;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-bg img {
@@ -549,6 +561,9 @@ body.preload .mobile-link {
   object-fit: cover;
   object-position: center;
   filter: contrast(1.05);
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* Мягкий переход снизу к белому контенту (без синевы и без затемнения красного фона) */
