@@ -125,6 +125,7 @@ window.filterCategory = function(catKey) {
   let targetFilter = 'all';
   if (catKey === 'entrance' || catKey === 'doors') targetFilter = 'entrance';
   else if (catKey === 'interior') targetFilter = 'interior';
+  else if (catKey === 'hardware' || catKey === 'handles') targetFilter = 'hardware';
   else if (catKey === 'windows') targetFilter = 'windows';
   else if (catKey === 'patio') targetFilter = 'patio';
   else if (catKey === 'ceilings') targetFilter = 'ceilings';
@@ -206,6 +207,10 @@ window.openOrderModal = function(productName = '') {
         break;
       }
       if (productName.toLowerCase().includes('межкомнат') && productSelect.options[i].value.includes('Межкомнатные')) {
+        productSelect.selectedIndex = i;
+        break;
+      }
+      if ((productName.toLowerCase().includes('ручк') || productName.toLowerCase().includes('фурнитур') || productName.toLowerCase().includes('ajax') || productName.toLowerCase().includes('punto')) && productSelect.options[i].value.includes('фурнитура')) {
         productSelect.selectedIndex = i;
         break;
       }

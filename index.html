@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body class="preload">
 
@@ -100,7 +100,20 @@
               </div>
               <div class="dropdown-item-text">
                 <strong>Межкомнатные двери</strong>
-                <small>От 4 200 ₽ • Экошпон, эмаль, массив</small>
+                <small>От 9 500 ₽ • Dverona, ASADA, ELIGOR</small>
+              </div>
+            </button>
+
+            <!-- Дверная фурнитура -->
+            <button type="button" class="dropdown-item" onclick="selectCatalogCategory('hardware')" role="menuitem">
+              <div class="dropdown-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+                </svg>
+              </div>
+              <div class="dropdown-item-text">
+                <strong>Дверная фурнитура</strong>
+                <small>От 1 650 ₽ • Ручки AJAX, PUNTO, замки</small>
               </div>
             </button>
 
@@ -155,11 +168,17 @@
               </div>
               <div class="dropdown-item-text">
                 <strong>Смотреть весь каталог</strong>
-                <small>Все 11 товаров и категорий с ценами</small>
+                <small>Все 16 товаров и категорий с ценами</small>
               </div>
             </button>
           </div>
         </div>
+        <a href="#about" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18M3 7v14M21 7v14M6 11h3M6 15h3M15 11h3M15 15h3M9 21V3l6 4v14"/>
+          </svg>
+          О компании
+        </a>
         <a href="#offices" class="nav-link">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H12H13C13.5523 20 14 19.5523 14 19V5C14 4.44772 13.5523 4 13 4H5ZM5 22H12H13H19C20.6569 22 22 20.6569 22 19V9C22 7.34315 20.6569 6 19 6H16V5C16 3.34315 14.6569 2 13 2H5C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22ZM19 20H15.8293C15.9398 19.6872 16 19.3506 16 19V8H19C19.5523 8 20 8.44772 20 9V19C20 19.5523 19.5523 20 19 20ZM7 14H5V16H7V14ZM8 14H10V16H8V14ZM13 14H11V16H13V14ZM17 14H19V16H17V14ZM19 10H17V12H19V10ZM5 10H7V12H5V10ZM10 10H8V12H10V10ZM11 10H13V12H11V10ZM7 6H5V8H7V6ZM8 6H10V8H8V6ZM13 6H11V8H13V6Z"/>
@@ -208,11 +227,29 @@
         </svg>
         Каталог & Цены
       </a>
+      <a href="#about" class="mobile-link" onclick="closeMobileMenu()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21h18M3 7v14M21 7v14M6 11h3M6 15h3M15 11h3M15 15h3M9 21V3l6 4v14"/>
+        </svg>
+        О компании («Уралокно»)
+      </a>
       <a href="#products" class="mobile-link" onclick="closeMobileMenu(); filterCategory('windows')">
         <svg viewBox="-7.82 0 122.88 122.88" fill="currentColor">
           <path fill-rule="evenodd" d="M4.21,0H103a4.22,4.22,0,0,1,4.21,4.21V118.67a4.23,4.23,0,0,1-4.21,4.21H4.21A4.23,4.23,0,0,1,0,118.67V4.21A4.23,4.23,0,0,1,4.21,0ZM69,80.67a1.8,1.8,0,0,1,2.12,2.9l-4.87,3.59a1.8,1.8,0,0,1-2.12-2.9L69,80.67Zm19.12-16a1.8,1.8,0,1,1,2.33,2.74L75.9,79.72A1.8,1.8,0,1,1,73.58,77L88.11,64.65ZM89,78.92A1.79,1.79,0,1,1,91.3,81.7L68.41,100.39a1.79,1.79,0,1,1-2.26-2.78L89,78.92ZM37.18,42.55a1.8,1.8,0,1,1-2.13-2.9l4.87-3.59A1.8,1.8,0,1,1,42,39l-4.86,3.59Zm-19.13,16a1.8,1.8,0,1,1-2.32-2.74L30.26,43.5a1.8,1.8,0,0,1,2.32,2.74L18.05,58.57ZM17.13,44.3a1.79,1.79,0,0,1-2.26-2.78L37.75,22.83A1.79,1.79,0,1,1,40,25.61L17.13,44.3Zm-8.76-36H49.5V114.61H8.37V8.27Zm49.36,0H98.86V114.61H57.73V8.27Z"/>
         </svg>
         Пластиковые окна
+      </a>
+      <a href="#products" class="mobile-link" onclick="closeMobileMenu(); filterCategory('interior')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21.0001L14 21V5.98924C14 4.6252 14 3.94318 13.7187 3.47045C13.472 3.05596 13.0838 2.74457 12.6257 2.59368C12.1032 2.42159 11.4374 2.56954 10.1058 2.86544L7.50582 3.44322C6.6117 3.64191 6.16464 3.74126 5.83093 3.98167C5.53658 4.19373 5.30545 4.48186 5.1623 4.8152C5 5.19312 5 5.65108 5 6.56702V21.0001M13.994 5.00007H15.8C16.9201 5.00007 17.4802 5.00007 17.908 5.21805C18.2843 5.4098 18.5903 5.71576 18.782 6.09209C19 6.51991 19 7.07996 19 8.20007V21.0001H21M11 12.0001H11.01"/>
+        </svg>
+        Межкомнатные двери
+      </a>
+      <a href="#products" class="mobile-link" onclick="closeMobileMenu(); filterCategory('hardware')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+        </svg>
+        Дверная фурнитура
       </a>
       <a href="#products" class="mobile-link" onclick="closeMobileMenu(); filterCategory('patio')">
         <svg viewBox="0 0 512 512" fill="currentColor">
@@ -403,6 +440,113 @@
           <p class="adv-desc">Официальный договор, фабричный контроль качества и профессиональный монтаж по ГОСТу.</p>
         </div>
       </div>
+  </section>
+
+  <!-- ABOUT COMPANY SECTION («Урал Окно» с 2004 года) -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-header">
+        <div class="section-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18M3 7v14M21 7v14M6 11h3M6 15h3M15 11h3M15 15h3M9 21V3l6 4v14"/>
+          </svg>
+          Завод светопрозрачных конструкций с 2004 года
+        </div>
+        <h2 class="section-title">О компании «Урал Окно»</h2>
+        <p class="section-subtitle">
+          Более 20 лет мы производим и устанавливаем надежные пластиковые окна, двери и фасадные конструкции на Южном Урале с бескомпромиссным контролем качества.
+        </p>
+      </div>
+
+      <!-- Ключевые показатели завода -->
+      <div class="about-stats-grid">
+        <div class="about-stat-card">
+          <div class="about-stat-number">2004</div>
+          <div class="about-stat-label">Год основания завода</div>
+          <div class="about-stat-desc">Более 20 лет безупречной репутации и сервиса</div>
+        </div>
+
+        <div class="about-stat-card">
+          <div class="about-stat-number">500 000+</div>
+          <div class="about-stat-label">Конструкций выпущено</div>
+          <div class="about-stat-desc">Для квартир, загородных домов и объектов бизнеса</div>
+        </div>
+
+        <div class="about-stat-card">
+          <div class="about-stat-number">&gt; 5 000 м²</div>
+          <div class="about-stat-label">Площадь завода</div>
+          <div class="about-stat-desc">Автоматизированные цеха: 800 окон и 1 600 стеклопакетов/день</div>
+        </div>
+
+        <div class="about-stat-card">
+          <div class="about-stat-number">ТОП-3</div>
+          <div class="about-stat-label">Заводов Урала</div>
+          <div class="about-stat-desc">Серебряный призёр премии «Золотое окно 2018» MosBuild</div>
+        </div>
+      </div>
+
+      <!-- Детальная информация о заводе и стандартах -->
+      <div class="about-details-box">
+        <div>
+          <h3 class="about-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            Фабричный стандарт и надежность
+          </h3>
+          <p class="about-text">
+            <strong>«Урал Окно»</strong> — это не просто оконная фирма, а крупный региональный завод-производитель с собственной производственно-технической базой. Каждое изделие проходит строгий четырехступенчатый контроль качества ОТК.
+          </p>
+          <p class="about-text">
+            География наших поставок охватывает <strong>6 регионов РФ и свыше 25 городов</strong>. Мы работаем напрямую без посредников, гарантируя фабричные цены и расширенную гарантию по ГОСТу.
+          </p>
+          <div class="about-badges-list">
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Контроль ОТК ГОСТ 30674-99
+            </span>
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Морозостойкость до -60°C
+            </span>
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Энергопакеты GGT
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="about-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Мировые партнеры и признание
+          </h3>
+          <p class="about-text">
+            Мы являемся официальным сертифицированным переработчиком бельгийских профильных систем <strong>Deceuninck</strong> (Бельгия), систем <strong>Grain</strong> и <strong>ARtec</strong> (Германия). Вся продукция комплектуется премиальной взломостойкой фурнитурой <strong>Maco</strong>, <strong>Roto</strong> и <strong>Siegenia</strong>.
+          </p>
+          <p class="about-text">
+            В 2018 году завод «Урал Окно» удостоен <strong>Серебряной медали премии «Золотое окно»</strong> на выставке MosBuild в Москве и признан одним из 3 лучших оконных предприятий Урала (О.К.Н.А. Маркетинг).
+          </p>
+          <div class="about-badges-list">
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Deceuninck Бельгия (Класс А)
+            </span>
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Maco & Roto Австрия/Германия
+            </span>
+            <span class="about-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              MosBuild Золотое окно
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -429,13 +573,25 @@
           <path d="M9.5 2H14.5M9.5 2L8.85 8.52C8.66 10.38 10.13 12 12 12C13.87 12 15.34 10.38 15.15 8.52L14.5 2M9.5 2H7.42C6.51 2 6.06 2 5.67 2.11C4.85 2.33 4.16 2.89 3.78 3.65M9.5 2L8.78 9.25C8.62 10.81 7.3 12 5.73 12C3.8 12 2.35 10.23 2.73 8.34L2.8 8M14.5 2H16.58C17.49 2 17.94 2 18.33 2.11C19.15 2.33 19.84 2.89 20.22 3.65C20.4 4.02 20.49 4.46 20.67 5.35L21.27 8.34C21.65 10.23 20.2 12 18.27 12C16.7 12 15.38 10.81 15.22 9.25L14.5 2Z"/>
           <path d="M9.5 21.5V18.5C9.5 17.57 9.5 17.1 9.7 16.75C9.83 16.52 10.02 16.33 10.25 16.2C10.6 16 11.07 16 12 16C12.93 16 13.4 16 13.75 16.2C13.98 16.33 14.17 16.52 14.3 16.75C14.5 17.1 14.5 17.57 14.5 18.5V21.5"/>
         </svg>
-        Все товары (11)
+        Все товары (16)
       </button>
       <button class="filter-btn" data-filter="windows">
         <svg viewBox="-7.82 0 122.88 122.88" fill="currentColor">
           <path fill-rule="evenodd" d="M4.21,0H103a4.22,4.22,0,0,1,4.21,4.21V118.67a4.23,4.23,0,0,1-4.21,4.21H4.21A4.23,4.23,0,0,1,0,118.67V4.21A4.23,4.23,0,0,1,4.21,0ZM69,80.67a1.8,1.8,0,0,1,2.12,2.9l-4.87,3.59a1.8,1.8,0,0,1-2.12-2.9L69,80.67Zm19.12-16a1.8,1.8,0,1,1,2.33,2.74L75.9,79.72A1.8,1.8,0,1,1,73.58,77L88.11,64.65ZM89,78.92A1.79,1.79,0,1,1,91.3,81.7L68.41,100.39a1.79,1.79,0,1,1-2.26-2.78L89,78.92ZM37.18,42.55a1.8,1.8,0,1,1-2.13-2.9l4.87-3.59A1.8,1.8,0,1,1,42,39l-4.86,3.59Zm-19.13,16a1.8,1.8,0,1,1-2.32-2.74L30.26,43.5a1.8,1.8,0,0,1,2.32,2.74L18.05,58.57ZM17.13,44.3a1.79,1.79,0,0,1-2.26-2.78L37.75,22.83A1.79,1.79,0,1,1,40,25.61L17.13,44.3Zm-8.76-36H49.5V114.61H8.37V8.27Zm49.36,0H98.86V114.61H57.73V8.27Z"/>
         </svg>
         Пластиковые окна
+      </button>
+      <button class="filter-btn" data-filter="interior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21.0001L14 21V5.98924C14 4.6252 14 3.94318 13.7187 3.47045C13.472 3.05596 13.0838 2.74457 12.6257 2.59368C12.1032 2.42159 11.4374 2.56954 10.1058 2.86544L7.50582 3.44322C6.6117 3.64191 6.16464 3.74126 5.83093 3.98167C5.53658 4.19373 5.30545 4.48186 5.1623 4.8152C5 5.19312 5 5.65108 5 6.56702V21.0001M13.994 5.00007H15.8C16.9201 5.00007 17.4802 5.00007 17.908 5.21805C18.2843 5.4098 18.5903 5.71576 18.782 6.09209C19 6.51991 19 7.07996 19 8.20007V21.0001H21M11 12.0001H11.01"/>
+        </svg>
+        Межкомнатные двери
+      </button>
+      <button class="filter-btn" data-filter="hardware">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+        </svg>
+        Фурнитура
       </button>
       <button class="filter-btn" data-filter="patio">
         <svg viewBox="0 0 512 512" fill="currentColor">
@@ -452,12 +608,6 @@
           <path d="M3 21.0001L14 21V5.98924C14 4.6252 14 3.94318 13.7187 3.47045C13.472 3.05596 13.0838 2.74457 12.6257 2.59368C12.1032 2.42159 11.4374 2.56954 10.1058 2.86544L7.50582 3.44322C6.6117 3.64191 6.16464 3.74126 5.83093 3.98167C5.53658 4.19373 5.30545 4.48186 5.1623 4.8152C5 5.19312 5 5.65108 5 6.56702V21.0001M13.994 5.00007H15.8C16.9201 5.00007 17.4802 5.00007 17.908 5.21805C18.2843 5.4098 18.5903 5.71576 18.782 6.09209C19 6.51991 19 7.07996 19 8.20007V21.0001H21M11 12.0001H11.01"/>
         </svg>
         Входные двери
-      </button>
-      <button class="filter-btn" data-filter="interior">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 21.0001L14 21V5.98924C14 4.6252 14 3.94318 13.7187 3.47045C13.472 3.05596 13.0838 2.74457 12.6257 2.59368C12.1032 2.42159 11.4374 2.56954 10.1058 2.86544L7.50582 3.44322C6.6117 3.64191 6.16464 3.74126 5.83093 3.98167C5.53658 4.19373 5.30545 4.48186 5.1623 4.8152C5 5.19312 5 5.65108 5 6.56702V21.0001M13.994 5.00007H15.8C16.9201 5.00007 17.4802 5.00007 17.908 5.21805C18.2843 5.4098 18.5903 5.71576 18.782 6.09209C19 6.51991 19 7.07996 19 8.20007V21.0001H21M11 12.0001H11.01"/>
-        </svg>
-        Межкомнатные двери
       </button>
       <button class="filter-btn" data-filter="ceilings">
         <svg viewBox="0 0 511.999 511.999" fill="currentColor">
@@ -483,100 +633,328 @@
     <!-- Сетка карточек в рамочках -->
     <div class="products-grid">
       
-      <!-- Карточка 1: Окно 2-створчатое Стандарт -->
+      <!-- Карточка 1: Окно Deceuninck Фаворит Спейс 76 мм -->
       <article class="product-card" data-category="windows">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/window-plastic.avif" type="image/avif">
-            <source srcset="images/window-plastic.webp" type="image/webp">
-            <img loading="lazy" src="images/window-plastic.jpg" alt="Окно двухстворчатое Урал Окно Стандарт">
+            <source srcset="images/window-favorit-space.webp" type="image/webp">
+            <img loading="lazy" src="images/window-favorit-space.jpg" alt="Окно ПВХ Deceuninck Фаворит Спейс 76 мм Урал Окно">
           </picture>
-          <span class="product-badge">Популярный выбор</span>
+          <span class="product-badge">Бельгия • Премиум 76 мм</span>
           <span class="product-type">Окна ПВХ</span>
         </div>
         <div class="product-body">
-          <h3 class="product-name">Окно 2-створчатое «Стандарт»</h3>
+          <h3 class="product-name">Окно Deceuninck «Фаворит Спейс 76 мм»</h3>
           <p class="product-desc">
-            Классическое окно для типовых квартир. 4-камерный профиль 60 мм, поворотная и поворотно-откидная створки.
+            Флагманская 6-камерная бельгийская система 76 мм класса «А». 3 контура уплотнения, стеклопакет 42 мм с заглублением 25 мм против конденсата, 60 лет гарантии.
           </p>
           <div class="product-specs">
-            <span class="spec-pill">Профиль 60 мм</span>
-            <span class="spec-pill">2 стекла (энерго)</span>
-            <span class="spec-pill">Фурнитура Axor</span>
-            <span class="spec-pill">Москитная сетка</span>
+            <span class="spec-pill">Профиль 76 мм (6 камер)</span>
+            <span class="spec-pill">3 контура уплотнения</span>
+            <span class="spec-pill">Стеклопакет 42 мм GGT</span>
+            <span class="spec-pill">Фурнитура Maco / Roto</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
               <span class="price-label">Под ключ:</span>
-              <span class="product-price">12&nbsp;500&nbsp;₽</span>
+              <span class="product-price">14&nbsp;900&nbsp;₽</span>
             </div>
-            <button type="button" class="btn-card-order" onclick="openOrderModal('Окно 2-створчатое Стандарт')">
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Окно Deceuninck Фаворит Спейс 76 мм')">
               Заказать
             </button>
           </div>
         </div>
       </article>
 
-      <!-- Карточка 2: Окно 3-створчатое Thermo -->
+      <!-- Карточка 2: Окно Grain Prestige 70 мм -->
       <article class="product-card" data-category="windows">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/window-plastic.avif" type="image/avif">
-            <source srcset="images/window-plastic.webp" type="image/webp">
-            <img loading="lazy" src="images/window-plastic.jpg" alt="Окно трехстворчатое Урал Окно Thermo">
+            <source srcset="images/window-grain-prestige.webp" type="image/webp">
+            <img loading="lazy" src="images/window-grain-prestige.jpg" alt="Окно ПВХ Grain Prestige 70 мм Урал Окно">
           </picture>
-          <span class="product-badge">Энергосбережение А++</span>
+          <span class="product-badge">Хит продаж • Класс А</span>
           <span class="product-type">Окна ПВХ</span>
         </div>
         <div class="product-body">
-          <h3 class="product-name">Окно 3-створчатое «Thermo Comfort»</h3>
+          <h3 class="product-name">Окно Grain «Prestige 70 мм»</h3>
           <p class="product-desc">
-            5-камерный профиль 76 мм с 2-камерным стеклопакетом (3 стекла), аргон и немецкая фурнитура Roto NT.
+            Проверенная 5-камерная система 70 мм с толщиной стенки 3 мм ГОСТ. Заводское армирование 1.5 мм, уплотнитель Schlegel, повышенная шумоизоляция.
           </p>
           <div class="product-specs">
-            <span class="spec-pill">Профиль 76 мм</span>
-            <span class="spec-pill">3 стекла (аргон)</span>
-            <span class="spec-pill">Фурнитура Roto</span>
-            <span class="spec-pill">Шумоподавление</span>
+            <span class="spec-pill">Профиль 70 мм (5 камер)</span>
+            <span class="spec-pill">Стеклопакет до 40 мм</span>
+            <span class="spec-pill">Армирование 1.5 мм ГОСТ</span>
+            <span class="spec-pill">Уплотнитель Schlegel</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
               <span class="price-label">Под ключ:</span>
-              <span class="product-price">16&nbsp;400&nbsp;₽</span>
+              <span class="product-price">12&nbsp;200&nbsp;₽</span>
             </div>
-            <button type="button" class="btn-card-order" onclick="openOrderModal('Окно Thermo Comfort')">
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Окно Grain Prestige 70 мм')">
               Заказать
             </button>
           </div>
         </div>
       </article>
 
-      <!-- Карточка 3: Остекление балкона Панорама -->
+      <!-- Карточка 3: Окно ARtec Effectiv 70 -->
+      <article class="product-card" data-category="windows">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/window-plastic.webp" type="image/webp">
+            <img loading="lazy" src="images/window-plastic.jpg" alt="Окно ПВХ ARtec Effectiv 70 Урал Окно">
+          </picture>
+          <span class="product-badge">Немецкие стандарты</span>
+          <span class="product-type">Окна ПВХ</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Окно ARtec «Effectiv 70 / Evolution»</h3>
+          <p class="product-desc">
+            Немецкая профильная система ARtec с наклоном наплава под 45°. Разработана для экстремальных уральских морозов до -60°C.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Профиль 70 мм</span>
+            <span class="spec-pill">Теплопакет 32 мм</span>
+            <span class="spec-pill">Фурнитура Siegenia</span>
+            <span class="spec-pill">Морозостойкость -60°C</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Под ключ:</span>
+              <span class="product-price">10&nbsp;800&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Окно ARtec Effectiv 70')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 4: Dverona Орион 1.1 Серия Айс -->
+      <article class="product-card" data-category="interior">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/door-dverona-ice.webp" type="image/webp">
+            <img loading="lazy" src="images/door-dverona-ice.jpg" alt="Межкомнатная дверь Dverona Орион 1.1 Серия Айс">
+          </picture>
+          <span class="product-badge">Dverona • Серия Айс</span>
+          <span class="product-type">Межкомнатная дверь</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Dverona «Орион 1.1» (Серия «Айс»)</h3>
+          <p class="product-desc">
+            Дизайнерская щитовая дверь с бархатистым покрытием ПЭТ (цвет Эдельвейс). Черный вертикальный молдинг заподлицо, черная торцевая ABS-кромка 2 мм.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Покрытие ПЭТ (Германия)</span>
+            <span class="spec-pill">Черный молдинг заподлицо</span>
+            <span class="spec-pill">ABS-кромка 2 мм</span>
+            <span class="spec-pill">Магнитный замок</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Комплект:</span>
+              <span class="product-price">14&nbsp;800&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Dverona Орион 1.1 Серия Айс')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 5: Dverona Флэт Лайт Серия Бетон Эко -->
+      <article class="product-card" data-category="interior">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/door-dverona-concrete.webp" type="image/webp">
+            <img loading="lazy" src="images/door-dverona-concrete.jpg" alt="Межкомнатная дверь Dverona Флэт Лайт Бетон Эко">
+          </picture>
+          <span class="product-badge">Лофт стиль • Влагостойкая</span>
+          <span class="product-type">Межкомнатная дверь</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Dverona «Флэт Лайт» (Бетон Эко)</h3>
+          <p class="product-desc">
+            Трендовая урбанистическая дверь с фактурой светлого бетона Бетон Грей. Высокая стойкость к влаге и царапинам, контрастная черная кромка ABS.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Фактура Бетон Грей</span>
+            <span class="spec-pill">Черная ABS кромка</span>
+            <span class="spec-pill">Усиленный каркас</span>
+            <span class="spec-pill">Скрытые петли</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Комплект:</span>
+              <span class="product-price">11&nbsp;900&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Dverona Флэт Лайт Бетон')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 6: ASADA ЦДО 490 Парящая филенка -->
+      <article class="product-card" data-category="interior">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/door-asada-floating.webp" type="image/webp">
+            <img loading="lazy" src="images/door-asada-floating.jpg" alt="Межкомнатная дверь ASADA ЦДО 490 Парящая филенка">
+          </picture>
+          <span class="product-badge">Фабрика ASADA</span>
+          <span class="product-type">Межкомнатная дверь</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">ASADA «ЦДО 490 Парящая филенка»</h3>
+          <p class="product-desc">
+            Царговая конструкция нового поколения с визуальным эффектом парящей филенки. Матовое стекло графит сатин, покрытие Soft-touch Софт Серый / Дуб Палермо.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Парящая филенка</span>
+            <span class="spec-pill">Стекло Графит Сатин</span>
+            <span class="spec-pill">Покрытие Soft-touch</span>
+            <span class="spec-pill">Бесшумный замок</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Комплект:</span>
+              <span class="product-price">13&nbsp;400&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('ASADA ЦДО 490')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 7: ELIGOR Венеция Итальянский орех -->
+      <article class="product-card" data-category="interior">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/door-eligor-venezia.webp" type="image/webp">
+            <img loading="lazy" src="images/door-eligor-venezia.jpg" alt="Межкомнатная дверь ELIGOR Венеция Итальянский орех">
+          </picture>
+          <span class="product-badge">Классика • Фабрика Eligor</span>
+          <span class="product-type">Межкомнатная дверь</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">ELIGOR «Венеция» (Итальянский орех)</h3>
+          <p class="product-desc">
+            Благородная классическая дверь с арочным витражным остеклением и глубокой фрезеровкой. Стойкий экошпон цвета Итальянский орех / Беленый дуб.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Итальянский орех</span>
+            <span class="spec-pill">Арочное стекло с гравировкой</span>
+            <span class="spec-pill">Стойкий экошпон</span>
+            <span class="spec-pill">Комплект с наличниками</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Комплект:</span>
+              <span class="product-price">9&nbsp;500&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('ELIGOR Венеция')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 8: Ручка AJAX Clever BL-24 -->
+      <article class="product-card" data-category="hardware">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/handle-ajax-clever.webp" type="image/webp">
+            <img loading="lazy" src="images/handle-ajax-clever.jpg" alt="Дверная ручка AJAX Clever BL-24 матовый черный">
+          </picture>
+          <span class="product-badge">AJAX серия K.JS51</span>
+          <span class="product-type">Дверная фурнитура</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Ручка AJAX «Clever BL-24» (Квадрат)</h3>
+          <p class="product-desc">
+            Премиальная дверная ручка из цинкового сплава ZAMAK на строгой квадратной розетке 52х52 мм. Глубокий матовый черный цвет BL-24 с гальваникой.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Сплав ZAMAK</span>
+            <span class="spec-pill">Розетка 52х52 мм</span>
+            <span class="spec-pill">Черный матовый BL-24</span>
+            <span class="spec-pill">Ресурс 250 000 циклов</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Цена за пару:</span>
+              <span class="product-price">1&nbsp;890&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Ручка AJAX Clever BL-24')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 9: Ручка PUNTO Arcfit Slim -->
+      <article class="product-card" data-category="hardware">
+        <div class="product-image-frame">
+          <picture>
+            <source srcset="images/handle-punto-arcfit.webp" type="image/webp">
+            <img loading="lazy" src="images/handle-punto-arcfit.jpg" alt="Дверная ручка PUNTO Arcfit тонкая розетка Slim">
+          </picture>
+          <span class="product-badge">PUNTO • Slim розетка</span>
+          <span class="product-type">Дверная фурнитура</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Ручка PUNTO «Arcfit» (Тонкая розетка)</h3>
+          <p class="product-desc">
+            Итальянский эргономичный силуэт на ультратонкой круглой розетке толщиной 6 мм. Покрытие матовый сатин никель / графит, плавный бесшумный ход.
+          </p>
+          <div class="product-specs">
+            <span class="spec-pill">Розетка Slim 6 мм</span>
+            <span class="spec-pill">Матовый никель / сатин</span>
+            <span class="spec-pill">Многослойная гальваника</span>
+            <span class="spec-pill">Плавный ход</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price-box">
+              <span class="price-label">Цена за пару:</span>
+              <span class="product-price">1&nbsp;650&nbsp;₽</span>
+            </div>
+            <button type="button" class="btn-card-order" onclick="openOrderModal('Ручка PUNTO Arcfit')">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Карточка 10: Теплое остекление лоджий Panorama -->
       <article class="product-card" data-category="patio">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/window-patio.avif" type="image/avif">
-            <source srcset="images/window-patio.webp" type="image/webp">
-            <img loading="lazy" src="images/window-patio.jpg" alt="Остекление балконов Урал Окно Panorama">
+            <source srcset="images/balcony-warm-loggia.webp" type="image/webp">
+            <img loading="lazy" src="images/balcony-warm-loggia.jpg" alt="Теплое остекление лоджии Урал Окно Panorama">
           </picture>
-          <span class="product-badge">Теплое остекление</span>
+          <span class="product-badge">Теплый балкон под ключ</span>
           <span class="product-type">Балконы и лоджии</span>
         </div>
         <div class="product-body">
           <h3 class="product-name">Остекление балконов «Panorama»</h3>
           <p class="product-desc">
-            Теплое панорамное остекление от пола до потолка с энергоэффективными стеклопакетами и легким раздвижным ходом.
+            Теплое панорамное остекление от пола до потолка профилем Deceuninck с энергосберегающими стеклопакетами GGT и шумоизоляцией до 40 дБ.
           </p>
           <div class="product-specs">
-            <span class="spec-pill">Теплый алюминий/ПВХ</span>
-            <span class="spec-pill">Триплекс 8 мм</span>
-            <span class="spec-pill">Легкий ход</span>
-            <span class="spec-pill">Панорама 360°</span>
+            <span class="spec-pill">Теплый профиль 70 мм</span>
+            <span class="spec-pill">Энергопакет GGT</span>
+            <span class="spec-pill">Шумоизоляция 40 дБ</span>
+            <span class="spec-pill">Утепление и отделка</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
-              <span class="price-label">За м²:</span>
-              <span class="product-price">68&nbsp;500&nbsp;₽</span>
+              <span class="price-label">Под ключ:</span>
+              <span class="product-price">36&nbsp;500&nbsp;₽</span>
             </div>
             <button type="button" class="btn-card-order" onclick="openOrderModal('Остекление Panorama')">
               Заказать
@@ -585,21 +963,20 @@
         </div>
       </article>
 
-      <!-- Карточка 4: Алюминиевое остекление балкона Provedal -->
+      <!-- Карточка 11: Раздвижной балкон Provedal C640 -->
       <article class="product-card" data-category="patio">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/window-patio.avif" type="image/avif">
             <source srcset="images/window-patio.webp" type="image/webp">
             <img loading="lazy" src="images/window-patio.jpg" alt="Холодное остекление балкона Provedal">
           </picture>
-          <span class="product-badge">Выгодная цена</span>
+          <span class="product-badge">Легкая система</span>
           <span class="product-type">Балконы и лоджии</span>
         </div>
         <div class="product-body">
-          <h3 class="product-name">Раздвижной балкон «Provedal»</h3>
+          <h3 class="product-name">Раздвижной балкон «Provedal C640»</h3>
           <p class="product-desc">
-            Алюминиевая раздвижная система. Экономит полезное пространство балкона, защищает от пыли, снега и дождя.
+            Алюминиевая раздвижная система Provedal. Экономит полезное пространство балкона, защищает от пыли, снега, ветра и дождя.
           </p>
           <div class="product-specs">
             <span class="spec-pill">Профиль Provedal</span>
@@ -610,7 +987,7 @@
           <div class="product-footer">
             <div class="product-price-box">
               <span class="price-label">Под ключ:</span>
-              <span class="product-price">24&nbsp;900&nbsp;₽</span>
+              <span class="product-price">23&nbsp;900&nbsp;₽</span>
             </div>
             <button type="button" class="btn-card-order" onclick="openOrderModal('Балкон Provedal')">
               Заказать
@@ -619,32 +996,31 @@
         </div>
       </article>
 
-      <!-- Карточка 5: Входная дверь Titan -->
+      <!-- Карточка 12: Входная дверь Titan Термо -->
       <article class="product-card" data-category="entrance">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/door-entrance.avif" type="image/avif">
             <source srcset="images/door-entrance.webp" type="image/webp">
-            <img loading="lazy" src="images/door-entrance.jpg" alt="Входная дверь Урал Окно Titan">
+            <img loading="lazy" src="images/door-entrance.jpg" alt="Входная дверь Урал Окно Titan Термо">
           </picture>
-          <span class="product-badge">Хит продаж</span>
+          <span class="product-badge">Хит продаж • Для коттеджа</span>
           <span class="product-type">Входная дверь</span>
         </div>
         <div class="product-body">
           <h3 class="product-name">Входная дверь «Titan Термо»</h3>
           <p class="product-desc">
-            Бронированная входная дверь с терморазрывом, отделкой из натурального шпона ореха и биометрическим замком.
+            Уличная входная дверь с полным терморазрывом полотна и коробки. Толщина 110 мм, сталь 2 мм, 3 контура уплотнения Schlegel, замки Гардиан.
           </p>
           <div class="product-specs">
             <span class="spec-pill">Сталь 2.2 мм</span>
-            <span class="spec-pill">Терморазрыв</span>
-            <span class="spec-pill">3 контура</span>
-            <span class="spec-pill">Шум 45 дБ</span>
+            <span class="spec-pill">Терморазрыв полотна и короба</span>
+            <span class="spec-pill">3 контура уплотнения</span>
+            <span class="spec-pill">Замки Guardian 4 класса</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
               <span class="price-label">Под ключ:</span>
-              <span class="product-price">42&nbsp;900&nbsp;₽</span>
+              <span class="product-price">39&nbsp;900&nbsp;₽</span>
             </div>
             <button type="button" class="btn-card-order" onclick="openOrderModal('Входная дверь Titan Термо')">
               Заказать
@@ -653,32 +1029,31 @@
         </div>
       </article>
 
-      <!-- Карточка 6: Входная дверь Safe Guard -->
+      <!-- Карточка 13: Входная дверь Safe Guard -->
       <article class="product-card" data-category="entrance">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/door-entrance.avif" type="image/avif">
             <source srcset="images/door-entrance.webp" type="image/webp">
             <img loading="lazy" src="images/door-entrance.jpg" alt="Входная дверь Урал Окно Safe Guard">
           </picture>
-          <span class="product-badge">Защита 4 класса</span>
+          <span class="product-badge">Для квартиры • 45 дБ</span>
           <span class="product-type">Входная дверь</span>
         </div>
         <div class="product-body">
-          <h3 class="product-name">Входная дверь «Safe Guard»</h3>
+          <h3 class="product-name">Входная дверь «Safe Guard Графит»</h3>
           <p class="product-desc">
-            Усиленная металлическая дверь с полимерным антивандальным покрытием "Муар графит" и надежными замками Border.
+            Усиленная металлическая дверь с полимерным антивандальным покрытием "Муар графит", минеральной плитой Knauf и замками Border.
           </p>
           <div class="product-specs">
             <span class="spec-pill">Сталь 1.8 мм</span>
-            <span class="spec-pill">2 контура</span>
-            <span class="spec-pill">Замки Border</span>
-            <span class="spec-pill">Минплита Knauf</span>
+            <span class="spec-pill">2 контура уплотнения</span>
+            <span class="spec-pill">Замки Border с броней</span>
+            <span class="spec-pill">Минплита Knauf 45 дБ</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
               <span class="price-label">Под ключ:</span>
-              <span class="product-price">28&nbsp;500&nbsp;₽</span>
+              <span class="product-price">26&nbsp;500&nbsp;₽</span>
             </div>
             <button type="button" class="btn-card-order" onclick="openOrderModal('Входная дверь Safe Guard')">
               Заказать
@@ -687,95 +1062,26 @@
         </div>
       </article>
 
-      <!-- Карточка 7: Межкомнатная дверь Дуб -->
-      <article class="product-card" data-category="interior">
-        <div class="product-image-frame">
-          <picture>
-            <source srcset="images/door-interior.avif" type="image/avif">
-            <source srcset="images/door-interior.webp" type="image/webp">
-            <img loading="lazy" src="images/door-interior.jpg" alt="Межкомнатная дверь Урал Окно Classic Дуб">
-          </picture>
-          <span class="product-badge">Шпон дуба</span>
-          <span class="product-type">Межкомнатная дверь</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-name">Межкомнатная «Classic Дуб»</h3>
-          <p class="product-desc">
-            Экологичное полотно с отделкой брашированным дубом, бесшумным магнитным замком и скрытыми петлями.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Массив + Шпон</span>
-            <span class="spec-pill">Магнитный замок</span>
-            <span class="spec-pill">Скрытые петли</span>
-            <span class="spec-pill">Soft-touch</span>
-          </div>
-          <div class="product-footer">
-            <div class="product-price-box">
-              <span class="price-label">Комплект:</span>
-              <span class="product-price">18&nbsp;900&nbsp;₽</span>
-            </div>
-            <button type="button" class="btn-card-order" onclick="openOrderModal('Межкомнатная Classic Дуб')">
-              Заказать
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Карточка 8: Межкомнатная Modern White -->
-      <article class="product-card" data-category="interior">
-        <div class="product-image-frame">
-          <picture>
-            <source srcset="images/door-interior.avif" type="image/avif">
-            <source srcset="images/door-interior.webp" type="image/webp">
-            <img loading="lazy" src="images/door-interior.jpg" alt="Межкомнатная дверь Урал Окно Modern White">
-          </picture>
-          <span class="product-badge">Белая эмаль</span>
-          <span class="product-type">Межкомнатная дверь</span>
-        </div>
-        <div class="product-body">
-          <h3 class="product-name">Межкомнатная «Modern White»</h3>
-          <p class="product-desc">
-            Современная глухая дверь с влагостойким матовым покрытием белой эмалью и алюминиевой кромкой по периметру.
-          </p>
-          <div class="product-specs">
-            <span class="spec-pill">Матовая эмаль</span>
-            <span class="spec-pill">Алюм. кромка</span>
-            <span class="spec-pill">Бесшумный замок</span>
-            <span class="spec-pill">Влагостойкая</span>
-          </div>
-          <div class="product-footer">
-            <div class="product-price-box">
-              <span class="price-label">Комплект:</span>
-              <span class="product-price">15&nbsp;200&nbsp;₽</span>
-            </div>
-            <button type="button" class="btn-card-order" onclick="openOrderModal('Межкомнатная Modern White')">
-              Заказать
-            </button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Карточка 9: Натяжной потолок MSD Premium EuroKRAAB -->
+      <!-- Карточка 14: Натяжной потолок EuroKRAAB -->
       <article class="product-card" data-category="ceilings">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/ceiling-stretch.avif" type="image/avif">
             <source srcset="images/ceiling-stretch.webp" type="image/webp">
             <img loading="lazy" src="images/ceiling-stretch.jpg" alt="Натяжной потолок Сатин EuroKRAAB Урал Окно">
           </picture>
-          <span class="product-badge">MSD Premium</span>
+          <span class="product-badge">MSD Premium • EuroKRAAB</span>
           <span class="product-type">Натяжные потолки</span>
         </div>
         <div class="product-body">
           <h3 class="product-name">Натяжной потолок «Сатин & EuroKRAAB»</h3>
           <p class="product-desc">
-            Безупречно ровное матовое полотно с премиальным теневым примыканием EuroKRAAB и энергоэффективными световыми линиями.
+            Безупречно ровное матовое или сатиновое полотно с премиальным теневым примыканием EuroKRAAB и энергоэффективными световыми линиями.
           </p>
           <div class="product-specs">
             <span class="spec-pill">Полотно MSD Premium</span>
             <span class="spec-pill">Теневой зазор EuroKRAAB</span>
             <span class="spec-pill">Световые линии</span>
-            <span class="spec-pill">Без запаха</span>
+            <span class="spec-pill">Без запаха, класс B1</span>
           </div>
           <div class="product-footer">
             <div class="product-price-box">
@@ -789,11 +1095,10 @@
         </div>
       </article>
 
-      <!-- Карточка 10: Секционные гаражные ворота DoorHan -->
+      <!-- Карточка 15: Секционные гаражные ворота DoorHan / Alutech -->
       <article class="product-card" data-category="gates">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/gates.avif" type="image/avif">
             <source srcset="images/gates.webp" type="image/webp">
             <img loading="lazy" src="images/gates.jpg" alt="Секционные гаражные ворота Урал Окно DoorHan Alutech">
           </picture>
@@ -803,7 +1108,7 @@
         <div class="product-body">
           <h3 class="product-name">Ворота секционные «DoorHan / Alutech»</h3>
           <p class="product-desc">
-            Теплые секционные ворота из сэндвич-панелей 40 мм с немецким электроприводом, двумя пультами и защитой от обрыва пружин.
+            Теплые секционные ворота из сэндвич-панелей 40-45 мм с немецким электроприводом, двумя пультами и защитой от обрыва пружин.
           </p>
           <div class="product-specs">
             <span class="spec-pill">Панель 40 мм</span>
@@ -823,15 +1128,14 @@
         </div>
       </article>
 
-      <!-- Карточка 11: Забор из евроштакетника Grand Line -->
+      <!-- Карточка 16: Забор из евроштакетника Grand Line -->
       <article class="product-card" data-category="fences">
         <div class="product-image-frame">
           <picture>
-            <source srcset="images/fences.avif" type="image/avif">
             <source srcset="images/fences.webp" type="image/webp">
             <img loading="lazy" src="images/fences.jpg" alt="Забор из евроштакетника и профнастила Grand Line Урал Окно">
           </picture>
-          <span class="product-badge">Гарантия 10 лет</span>
+          <span class="product-badge">Grand Line 0.5 мм</span>
           <span class="product-type">Заборы</span>
         </div>
         <div class="product-body">
@@ -1039,10 +1343,12 @@
               </svg>
               Услуги и каталог
             </span>
+            <a class="footer-link" href="#about">О компании «Уралокно»</a>
             <a class="footer-link" href="#products" onclick="filterCategory('windows')">Пластиковые окна</a>
-            <a class="footer-link" href="#products" onclick="filterCategory('entrance')">Входные двери</a>
             <a class="footer-link" href="#products" onclick="filterCategory('interior')">Межкомнатные двери</a>
+            <a class="footer-link" href="#products" onclick="filterCategory('hardware')">Дверная фурнитура (AJAX, PUNTO)</a>
             <a class="footer-link" href="#products" onclick="filterCategory('patio')">Остекление балконов и лоджий</a>
+            <a class="footer-link" href="#products" onclick="filterCategory('entrance')">Входные двери</a>
             <a class="footer-link" href="#products" onclick="filterCategory('ceilings')">Натяжные потолки</a>
             <a class="footer-link" href="#products" onclick="filterCategory('gates')">Секционные ворота</a>
             <a class="footer-link" href="#products" onclick="filterCategory('fences')">Заборы и ограждения</a>
@@ -1112,9 +1418,10 @@
           <label class="form-label" for="productInterest">Интересующая услуга</label>
           <select id="productInterest" class="form-select">
             <option value="Пластиковые окна">Пластиковые окна</option>
+            <option value="Межкомнатные двери">Межкомнатные двери (Dverona, ASADA, ELIGOR)</option>
+            <option value="Дверная фурнитура">Дверная фурнитура (AJAX, PUNTO)</option>
             <option value="Остекление балконов">Остекление балконов и лоджий</option>
             <option value="Входные двери">Входные двери</option>
-            <option value="Межкомнатные двери">Межкомнатные двери</option>
             <option value="Натяжные потолки">Натяжные потолки</option>
             <option value="Ворота">Ворота (секционные, откатные)</option>
             <option value="Заборы">Заборы (евроштакетник, профнастил)</option>
@@ -1150,6 +1457,6 @@
     </svg>
   </button>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
