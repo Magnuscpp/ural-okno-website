@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarDropdown();
   initSmoothScroll();
   initScrollSpy();
+  initScrollTop();
 });
 
 // Category filtering
@@ -413,3 +414,29 @@ function initScrollSpy() {
   setTimeout(updateActive, 50);
   setTimeout(updateActive, 150);
 }
+
+// Scroll to top floating button
+function initScrollTop() {
+  const btn = document.getElementById('scrollTopBtn');
+  if (!btn) return;
+
+  function toggleBtn() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollY > 350) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  }
+
+  window.addEventListener('scroll', toggleBtn, { passive: true });
+  toggleBtn();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (history.replaceState) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  });
+}
+
