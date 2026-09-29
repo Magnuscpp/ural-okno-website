@@ -1752,42 +1752,47 @@ body.preload .mobile-link {
 /* Scroll to Top Button */
 .btn-scroll-top {
   position: fixed;
-  right: 20px;
-  bottom: 24px;
-  width: 48px;
-  height: 48px;
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--brand);
   color: #ffffff;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 990;
-  box-shadow: 0 6px 20px var(--brand-glow);
+  z-index: 99999 !important;
+  box-shadow: 0 8px 24px rgba(255, 45, 77, 0.5), 0 2px 6px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(16px);
-  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background 0.2s ease;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-scroll-top svg {
-  width: 22px;
-  height: 22px;
-  stroke: currentColor;
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  stroke-width: 3;
   flex-shrink: 0;
 }
 
 .btn-scroll-top:hover {
   background: var(--brand-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px var(--brand-glow);
+  box-shadow: 0 10px 28px rgba(255, 45, 77, 0.65);
 }
 
 .btn-scroll-top.show {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
   transform: translateY(0);
 }
 

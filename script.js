@@ -293,10 +293,16 @@ function showToast(message) {
 
   if (toast && toastMessage) {
     toastMessage.textContent = message;
-    toast.classList.add('show');
+    toast.style.display = 'flex';
+    requestAnimationFrame(() => {
+      toast.classList.add('show');
+    });
 
     setTimeout(() => {
       toast.classList.remove('show');
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 350);
     }, 4500);
   }
 }
@@ -421,8 +427,8 @@ function initScrollTop() {
   if (!btn) return;
 
   function toggleBtn() {
-    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollY > 350) {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    if (scrollY > 250) {
       btn.classList.add('show');
     } else {
       btn.classList.remove('show');
@@ -430,9 +436,11 @@ function initScrollTop() {
   }
 
   window.addEventListener('scroll', toggleBtn, { passive: true });
+  window.addEventListener('touchmove', toggleBtn, { passive: true });
   toggleBtn();
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (history.replaceState) {
       history.replaceState(null, '', window.location.pathname + window.location.search);
